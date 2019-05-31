@@ -19,7 +19,7 @@ zuul:
   routes:
     products:
       path: /product/**
-      serviceid: scloud-product
+      serviceid: scloud-config-product-client
 
     users:
       path: /user/**
