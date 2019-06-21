@@ -69,10 +69,15 @@ zuul:
     products:
       path: /product/**
       serviceid: scloud-product
+      
 
-    users:
-      path: /user/**
-      serviceid: scloud-user-hystrix
+    #users:
+      #path: /user/**
+      #serviceid: scloud-user-hystrix
+      users:
+      path: /users2-proxy/**
+      url: http://localhost:8888/
+      
   ignored-services:
     "*"
   prefix: /wecloud
